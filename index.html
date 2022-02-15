@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script> -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    
     <title>Pollo Campero El Salvador</title>
 </head>
 <body>
@@ -43,104 +46,28 @@
     <!-- CARDS -->
 
     <section class="section2">
-        <div class="content-cards">
-            <div class="card">
-                <a href="#">
-                    <img src="./img/card1.png" alt="">
-                    <div class="cardTitulo">
-                        Promociones
-                    </div>
-                    <div class="cardButton">
-                        <button>Ordenar</button>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="card">
-                <a href="#">
-                    <img src="./img/card2.png" alt="">
-                    <div class="cardTitulo">
-                        La Tienda Pollito
-                    </div>
-                    <div class="cardButton">
-                        <button>Ordenar</button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./img/card3.png" alt="">
-                    <div class="cardTitulo">
-                        Camperitos Doritos
-                    </div>
-                    <div class="cardButton">
-                        <button>Ordenar</button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./img/card4.png" alt="">
-                    <div class="cardTitulo">
-                        Pollo
-                    </div>
-                    <div class="cardButton">
-                        <button>Ordenar</button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./img/card5.png" alt="">
-                    <div class="cardTitulo">
-                        Camperitos, Alitas Y Pechuguitas
-                    </div>
-                    <div class="cardButton">
-                        <button>Ordenar</button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./img/card6.png" alt="">
-                    <div class="cardTitulo">
-                        Pizza
-                    </div>
-                    <div class="cardButton">
-                        <button>Ordenar</button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./img/card7.png" alt="">
-                    <div class="cardTitulo">
-                        Sándwiches; Hamburguesas y Burritos
-                    </div>
-                    <div class="cardButton">
-                        <button>Ordenar</button>
-                    </div>
-                </a>
-            </div>
-
-            <div class="card">
-                <a href="#">
-                    <img src="./img/card8.png" alt="">
-                    <div class="cardTitulo">
-                        Ensaldas y Tazón
-                    </div>
-                    <div class="cardButton">
-                        <button>Ordenar</button>
-                    </div>
-                </a>
+        <div id="app">
+            <div class="content-cards">        
+                <div class="card" v-for="(card, index) in contenidoCards" :key="index">
+                    <a href="#">
+                        <img :src="card.url" alt="">
+                        <div class="cardTitulo">
+                            {{ card.titulo }}
+                        </div>
+                        <div class="cardButton">
+                            <button>Ordenar</button>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+
+        
+
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
