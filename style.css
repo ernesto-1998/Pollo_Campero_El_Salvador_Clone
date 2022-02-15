@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Oswald:wght@300&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(76, 25, 15);
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+
+.content-nav {
+    margin: 0 75px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 10px 0;
+}
+
+.content-nav i {
+    margin-left: 10px;
+}
+
+.header {
+    color: rgb(76, 25, 15);
+    font-weight: bold;
+    width: 100%;
+}
+
+.nav {
+    background: rgb(247, 145, 35);
+}
+
+.navigation {
+    width: 100%;
+    background: rgb(255, 243, 221);
+}
+
+.navigation-ul {
+    margin: 0 75px;
+    padding: 10px 0;
+    padding-right: 35px;
+    display: grid;
+    grid-template-columns: 220px repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigation-ul-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid black;
+    /* margin-right: 35px; */
+}
+
+.navigation-ul-li i {
+    margin-right: 5px;
+}
+
+.navigation-ul-li1 {
+    position: relative;
+}
+
+.navigation-ul-li4 {
+    border-right: 1px solid black;
+}
+
+.navigation-ul img {
+    position: absolute;
+    top: -75px;
+    left: 0;
+}
+
+/* SECTION1 */
+
+.section1 {
+    width: 100%;
+}
+
+.content-banner{
+    margin: 0 75px;
+}
+
