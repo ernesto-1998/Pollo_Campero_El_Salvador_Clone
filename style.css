@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'MuseoModerno', sans-serif;
     font-size: 17px;
+    color: rgb(76, 25, 15);
 }
 
 body {
@@ -47,7 +48,8 @@ ul {
 }
 
 .nav {
-    background: rgb(247, 145, 35);
+    background-image: url("./img/header-pattern.png");
+    background-color: rgb(247, 145, 35);
 }
 
 .navigation {
@@ -103,6 +105,7 @@ ul {
 }
 
 .content-banner{
+    
     margin: 0 75px;
 }
 
@@ -118,6 +121,7 @@ ul {
 
 .content-cards {
     margin: 0 75px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -157,7 +161,8 @@ ul {
 
 .cardButton button {
     border: none;
-    background: rgb(189, 214, 70);
+    /* background: rgb(189, 214, 70); */
+    background: #a4c701;
     color: rgb(76, 25, 15);
     padding: 5px 65px;
     font-weight: bold;
@@ -167,4 +172,81 @@ ul {
     cursor: pointer;
     opacity: 0.8;
 }
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background: #d1ca29 url("img/footer-pattern.png");
+    
+}
+
+.content-footer {
+    padding: 0 75px;
+    padding-bottom: 130px;
+}
+
+.content-footer-1line {
+   
+}
+
+.content-footer-1line img {
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+.content-footer-2line {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.content-footer-2line-1col {
+    display: flex;
+    align-items: center;
+    color: rgb(76, 25, 15);
+}
+
+.icons {
+    margin-left: 40px;
+}
+
+.content-footer-2line-2col {
+    margin: auto;
+}
+
+.content-footer-2line-3col {
+  margin: auto;
+}
+
+.footerInput {
+    display: flex;
+    justify-content: center;
+}
+
+.footerInput input {
+    width: 100%;
+    
+}
+
+.footerButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.footerButton button {
+    border: none;
+    background-color: rgb(255, 107, 36);
+    font-weight: bold;
+    padding: 5px 50px;
+}
+
+/* KEY FRAMES */
+
+
+
 
