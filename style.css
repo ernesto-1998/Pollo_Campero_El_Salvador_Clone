@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'MuseoModerno', sans-serif;
     font-size: 17px;
+    box-sizing: border-box;
     color: rgb(76, 25, 15);
 }
 
@@ -105,12 +106,12 @@ ul {
 }
 
 .content-banner{
-    
-    margin: 0 75px;
+    padding: 0 75px;
 }
 
 .content-banner img {
     width: 100%;
+
 }
 
 /* CARDS */
